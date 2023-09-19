@@ -19,12 +19,18 @@ set_property(TARGET vsgSFML PROPERTY POSITION_INDEPENDENT_CODE ON)
 set_property(TARGET vsgSFML PROPERTY CXX_STANDARD 17)
 
 target_include_directories(vsgSFML PUBLIC
-                           $<BUILD_INTERFACE:${CMAKE_SOURCE_DER}/include>
+                           $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
                            $<INSTALL_INTERFACE:include>
                        )
 
 target_link_libraries(vsgSFML
                       vsg::vsg
+                      sfml-system
+                      sfml-window
+                      sfml-graphics
+                      sfml-network
+                      sfml-audio
+                      sfml-main
                   )
 
 

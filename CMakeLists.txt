@@ -8,7 +8,7 @@ project(vsgSFML
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(vsg 1.0.9 REQUIRED)
-find_package(SFML 2.6.0 COMPONENTS system REQUIRED)
+find_package(SFML 2.6 COMPONENTS system window graphics network audio main REQUIRED)
 find_package(vsgXchange QUIET)
 
 add_subdirectory(src/vsgSFML)
