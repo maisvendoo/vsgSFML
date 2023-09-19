@@ -7,7 +7,7 @@ set(HEADERS
 
 add_executable(vsgSDLexample ${SOURCES} ${HEADERS})
 
-target_link_libraries(vsgSDLexample vsgSDL)
+target_link_libraries(vsgSDLexample vsgSFML)
 
 if (vsgXchange_FOUND)
     target_compile_definitions(vsgSDLexample PRIVATE vsgXchange_FOUND)
