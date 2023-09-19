@@ -43,6 +43,24 @@ namespace vsgSFML
             {sf::Keyboard::Scancode::X, vsg::KeySymbol::KEY_X},
             {sf::Keyboard::Scancode::Y, vsg::KeySymbol::KEY_Y},
             {sf::Keyboard::Scancode::Z, vsg::KeySymbol::KEY_Z},
+
+            // Other keys
+            {sf::Keyboard::Scancode::Home, vsg::KeySymbol::KEY_Home},
+            {sf::Keyboard::Scancode::Up, vsg::KeySymbol::KEY_Up},
+            {sf::Keyboard::Scancode::Down, vsg::KeySymbol::KEY_Down},
+            {sf::Keyboard::Scancode::Left, vsg::KeySymbol::KEY_Left},
+            {sf::Keyboard::Scancode::Right, vsg::KeySymbol::KEY_Right},
+            {sf::Keyboard::Scancode::Home, vsg::KeySymbol::KEY_Next},
+            {sf::Keyboard::Scancode::End, vsg::KeySymbol::KEY_End},
+            {sf::Keyboard::Scancode::Comma, vsg::KeySymbol::KEY_Comma},
+            //{sf::Keyboard::Scancode::NumpadMinus, vsg::KeySymbol::KEY_Minus},
+            {sf::Keyboard::Scancode::Period, vsg::KeySymbol::KEY_Period},
+            {sf::Keyboard::Scancode::Semicolon, vsg::KeySymbol::KEY_Semicolon},
+            {sf::Keyboard::Scancode::Equal, vsg::KeySymbol::KEY_Equals},
+            {sf::Keyboard::Scancode::Slash, vsg::KeySymbol::KEY_Slash},
+            //{sf::Keyboard::Scancode::Left, vsg::KeySymbol::KEY_Leftbracket},
+            //{sf::Keyboard::Scancode::Rigt, vsg::KeySymbol::KEY_Rightbracket},
+
         }
     {
 
