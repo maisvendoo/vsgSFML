@@ -66,4 +66,42 @@ namespace vsgSFML
 
     }
 
+    //--------------------------------------------------------------------------
+    //
+    //--------------------------------------------------------------------------
+    constexpr vsg::KeyModifier KeyboardMap::getModifier(sf::Uint16 keyMod) const
+    {
+        uint16_t modifierMaks = 0;
+
+        if (keyMod & (sf::Keyboard::LShift || sf::Keyboard::RShift))
+            modifierMaks |= vsg::KeyModifier::MODKEY_Shift;
+
+        if (keyMod & (sf::Keyboard::LControl || sf::Keyboard::RControl))
+            modifierMaks |= vsg::KeyModifier::MODKEY_Control;
+
+        if (keyMod & (sf::Keyboard::LAlt || sf::Keyboard::RAlt))
+            modifierMaks |= vsg::KeyModifier::MODKEY_Alt;
+
+        return vsg::KeyModifier(modifierMaks);
+    }
+
+    //--------------------------------------------------------------------------
+    //
+    //--------------------------------------------------------------------------
+    bool KeyboardMap::getKeySingularly(const sf::Event *e,
+                                       vsg::KeySymbol &keySymbol,
+                                       vsg::KeySymbol &modifiedKeySymbol,
+                                       vsg::KeyModifier &keyModifier) const
+    {
+        const auto key = e->key.code;
+
+        auto it = keycodeSingular.find(key);
+
+        if (it == keycodeSingular.end())
+            return false;
+
+        //const auto keyMod = e->key.
+
+        return false;
+    }
 }

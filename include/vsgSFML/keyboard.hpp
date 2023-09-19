@@ -16,10 +16,10 @@ namespace vsgSFML
 
         bool getKeySingularly() const;
 
-        bool getKeySingulary(const sf::Event *,
-                             vsg::KeySymbol &,
-                             vsg::KeySymbol &,
-                             vsg::KeyModifier &) const;
+        bool getKeySingularly(const sf::Event *,
+                              vsg::KeySymbol &,
+                              vsg::KeySymbol &,
+                              vsg::KeyModifier &) const;
 
         bool getKeyContinuosly(const sf::Keyboard::Scancode,
                                vsg::KeySymbol &,
